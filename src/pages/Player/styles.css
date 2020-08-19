@@ -21,7 +21,7 @@
 .panel .content {
     padding: 1.5rem 2.6rem;
     width: 100%;
-    max-height: 60rem;
+    max-height: 86vh;
     overflow-y: scroll;
 }
 
@@ -164,4 +164,10 @@
     position: absolute;
     right: 0;
     margin-top: -4px;
+}
+
+@media(min-width: 1000px) {
+    .panel .content {
+        max-height: 94vh;
+    }
 }
