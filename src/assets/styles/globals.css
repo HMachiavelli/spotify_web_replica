@@ -1,0 +1,47 @@
+:root {
+    --color-background: #121212;
+    --color-background-dark: #040404;
+    --color-background-light: #282828;
+    --color-background-lighter: #535353;
+    --color-text-primary: #b3b3b3;
+    --color-background-secondary: #5d37ef;
+    --color-background-secondary-light: #6d749f;
+    --color-green: #1db653;
+    --white: #FFFFFF;
+  
+    font-size: 60%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+body {
+    background: var(--color-background);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Montserrat;
+    color: var(--color-text-base);
+}
+
+@media(min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
+}

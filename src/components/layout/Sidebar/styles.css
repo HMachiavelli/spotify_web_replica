@@ -1,0 +1,11 @@
+.panel .sidebar {
+    max-height: 100vh;
+    padding: 2.4rem 1rem; 
+    width: 23.5rem;
+    background-color: var(--color-background-dark);
+}
+
+.panel .sidebar img {
+    margin-left: 1.4rem;
+    height: 3.9rem;
+}

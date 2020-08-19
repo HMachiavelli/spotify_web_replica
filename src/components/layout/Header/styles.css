@@ -1,0 +1,60 @@
+.panel .content .contentHeader {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel .content .contentHeader .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel .content .contentHeader .buttonContainer button {
+    width: 33px;
+    height: 33px;
+    margin: 0 0.7rem;
+    background-color: var(--color-background-dark);
+    color: var(--color-text-primary);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.panel .content .contentHeader .user {
+    padding: 0 0.1rem;
+    background: var(--color-background-dark);
+    border-radius: 35px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.panel .content .contentHeader .user:hover {
+    background: var(--color-background-light);
+}
+
+.panel .content .contentHeader .user * {
+    color: var(--white);
+    font-weight: bold;
+    margin-right: 0.6rem;
+}
+
+.panel .content .contentHeader .user .userAvatar {
+    align-self: center;
+}
+
+.panel .content .contentHeader .user .userAvatar img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin: 3px 0 0 1px;
+}

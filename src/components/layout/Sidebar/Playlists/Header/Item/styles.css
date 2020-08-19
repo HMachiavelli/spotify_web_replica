@@ -1,0 +1,65 @@
+.panel .sidebar .playlists ul li {
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.panel .sidebar .playlists ul li button {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.5s;
+    font-weight: 700;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.panel .sidebar .playlists ul li:hover button {
+    color: var(--white);
+}
+
+.panel .sidebar .playlists ul li button {
+    display: flex;
+    align-items: center;
+}
+
+.panel .sidebar .playlists ul li button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.3rem;
+    height: 3.3rem;
+    transition: 0.5s;
+}
+
+.panel .sidebar .playlists ul li:first-child button div {
+    background: var(--color-text-primary);
+    color: var(--color-background-dark);
+}
+
+.panel .sidebar .playlists ul li:first-child:hover button div {
+    background: var(--white);
+}
+
+.panel .sidebar .playlists ul li:last-child {
+    padding-bottom: 1.5rem;
+    border-bottom: solid 0.1rem var(--color-text-primary);
+}
+
+.panel .sidebar .playlists ul li:last-child button div {
+    background: var(--color-background-secondary);
+    color: var(--color-text-primary);
+}
+
+.panel .sidebar .playlists ul li:last-child:hover button div {
+    background: var(--color-background-secondary-light);
+    color: var(--white);
+}
+
+.panel .sidebar .playlists ul li button span {
+    margin-left: 1.1rem;
+    font-size: 1.2rem;
+}

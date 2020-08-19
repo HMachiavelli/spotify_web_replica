@@ -1,0 +1,84 @@
+.panel .content .contentMain .musicList .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 3rem;
+}
+
+.panel .content .contentMain .musicList .title h2 {
+    color: var(--white);
+}
+
+.panel .content .contentMain .musicList .title button {
+    background: none;
+    border: none;
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.panel .content .contentMain .musicList .title button:hover {
+    text-decoration: underline;
+}
+
+.panel .content .contentMain .musicList ul {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel .content .contentMain .musicList ul li {
+    background: var(--color-background-light);
+    padding: 2rem 2rem 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+.panel .content .contentMain .musicList ul li .play {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+    background: var(--color-green);
+    color: var(--white);
+    display: none;
+    border-radius: 50%;
+    cursor: initial;
+}
+
+.panel .content .contentMain .musicList ul li .play:hover {
+    width: 43px;
+    height: 43px;
+}
+
+.panel .content .contentMain .musicList ul li:hover > .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel .content .contentMain .musicList ul li img {
+    width: 12rem;
+}
+
+.panel .content .contentMain .musicList ul li .musicTitle {
+    color: var(--white);
+    font-weight: 700;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.panel .content .contentMain .musicList ul li .author {
+    color: var(--color-text-primary);
+    margin-top: 2rem;
+    font-size: 1rem;
+}

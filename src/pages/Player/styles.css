@@ -1,0 +1,167 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.panel {
+    display: flex;
+}
+
+.player {
+    background-color: var(--color-background-light);
+    position: fixed;
+    bottom: 0;
+    height: 75px;
+    display: flex;
+    width: 100%;
+    padding: 1.4rem;
+    justify-content: space-between;
+}
+
+.panel .content {
+    padding: 1.5rem 2.6rem;
+    width: 100%;
+    max-height: 60rem;
+    overflow-y: scroll;
+}
+
+.player .listening {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player .listening > * {
+    margin-right: 1rem;
+}
+
+.player .listening img {
+    width: 40px;
+    height: 40px;
+}
+
+.player .listening .about .songTitle {
+    color: var(--white);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.player .listening .about .songTitle:hover {
+    text-decoration: underline;
+}
+
+.player .listening .about .songAuthor {
+    color: var(--color-text-primary);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.player .listening .about .songAuthor:hover {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.player .listening button {
+    background: none;
+    border: none;
+    color: var(--white)
+}
+
+.player .controls {
+    margin-left: -160px;
+}
+
+.player .controls .controlsUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.player .controls .controlsUp button {
+    color: var(--color-text-primary);
+    background: none;
+    border: none;
+    margin: 0 1.5rem;
+}
+
+.player .controls .controlsUp button:hover {
+    color: var(--white);
+}
+
+.player .controls .timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player .controls .timeline div.timebar {
+    width: 50rem;
+    height: 4px;
+    background: var(--color-background-lighter);
+    border-radius: 35px;
+    margin: 0 0.6rem;
+}
+
+.player .controls .timeline span {
+    font-size: 1rem;
+    color: var(--color-text-primary);
+}
+
+.player .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player .options > * {
+    margin: 0 1rem;
+}
+
+.player .options button {
+    color: var(--color-text-primary);
+    background: none;
+    border: none;
+}
+
+.player .options > button:hover {
+    color: var(--white);
+}
+
+.player .options .volume:hover {
+    color: var(--white);
+}
+
+.player .options .volume:hover .volumebar {
+    background: var(--color-green);
+}
+
+.player .options .volume:hover .volumebar .volumeControl {
+    display: block;
+}
+
+.player .options .volume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player .options .volume div.volumebar {
+    width: 8rem;
+    height: 4px;
+    background: var(--color-text-primary);
+    border-radius: 35px;
+    margin: 0 0.6rem;
+    position: relative;
+}
+
+.player .options .volume div.volumebar .volumeControl {
+    width: 13px;
+    height: 13px;
+    background: var(--white);
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: -4px;
+}

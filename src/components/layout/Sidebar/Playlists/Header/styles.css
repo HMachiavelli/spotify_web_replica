@@ -1,0 +1,14 @@
+.panel .sidebar .playlists {
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+}
+
+.panel .sidebar .playlists p {
+    font-size: 1.3rem;
+    color: var(--color-text-primary);
+    font-weight: 700;
+}
+
+.panel .sidebar .playlists ul {
+    margin-top: 1.5rem;
+}
